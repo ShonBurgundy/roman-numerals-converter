@@ -17,14 +17,16 @@ _This is a roman roman numeral converter._
   * Example Input: 5
   * Example Output: V
 
-  
+
 
 
 
 
 ## Setup/Installation Requirements
 
-* [INSERT INSTRUCTIONS]
+* Load index.html in preferred web browswer.
+* Put number to be converted where it says Enter a number:.
+* Press Submit button.
 
 ## Known Bugs
 
