@@ -9,7 +9,15 @@ _This is a roman roman numeral converter._
 
 ## Specs
 
-* 
+* The program does nothing to string input
+  * Example Input: hi
+  * Example Output: hi
+
+* The program will convert number values to roman numerals
+  * Example Input: 5
+  * Example Output: V
+
+  
 
 
 
