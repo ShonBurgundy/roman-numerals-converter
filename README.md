@@ -18,10 +18,6 @@ _This is a roman roman numeral converter._
   * Example Output: V
 
 
-
-
-
-
 ## Setup/Installation Requirements
 
 * Load index.html in preferred web browswer.
