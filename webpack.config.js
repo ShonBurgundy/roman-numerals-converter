@@ -1,5 +1,5 @@
 const path = require('path');
-
+var webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
 
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -18,6 +18,11 @@ module.exports = {
   plugins: [
     new UglifyJsPlugin({ sourceMap: true}),
     new CleanWebpackPlugin(),
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery'
+  }),
     new HtmlWebpackPlugin({
       title: 'Roman Numerals',
       template: './src/index.html',
@@ -33,6 +38,14 @@ module.exports = {
           'css-loader'
         ]
       },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        use: 'url-loader?limit=100000'
+    },
+      {
+        test: /\.png$/,
+        use: 'url-loader?limit=100000'
+    },
       {
         test: /\.js$/,
         exclude: /node_modules/,

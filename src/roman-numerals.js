@@ -17,7 +17,7 @@ export function convertToRoman(num) { //function will convert roman numerals
   }
   return result;
   
-};
+}
 
-console.log();
+//console.log();
 
