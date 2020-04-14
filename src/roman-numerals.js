@@ -5,6 +5,10 @@ export function convertToRoman(num) { //function will convert roman numerals
 
   var result = "";
 
+  // if (num > 3999) {
+  //   return result = "You can't do that";
+  // }
+
   for (var i = 0; i < decimal.length; i++) { //run through array by +1 till end of array
     while (decimal[i] <= num) { //if num input is 50  it will be compared to the first index of the decimal var ([0]=1000) will come back false, will run through this process till it comes back with 50 (true). Once found true runs next lines.
       result += romanNumeral[i];//This appends the result to what the index it lands on in romanNumeral array.
@@ -12,7 +16,8 @@ export function convertToRoman(num) { //function will convert roman numerals
     }
   }
   return result;
+  
 };
 
-//console.log();
+console.log();
 

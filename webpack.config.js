@@ -1,4 +1,4 @@
-touchjconst path = require('path');
+const path = require('path');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
 
@@ -19,7 +19,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true}),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Ping Pong',
+      title: 'Roman Numerals',
       template: './src/index.html',
       inject: 'body'
     })
